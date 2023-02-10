@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html#">Guan<span>Lin</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li><a href="index.html#">Home</a></li>
+                    <li><a href="index.html#about-me">About</a></li>
+                    <li class="current"><a href="projects.html#">Projects</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="contact-me-cta"><a href="index.html#contact-me">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="center-col">
+                <h1>Interactive Web Learning Application</h1>
+                <p>A team of five and myself were tasked  to design an interactive learning tool for large scale lectures. Our team and the client believed that the was a standing problem for large lectures for both students and professors to communicate. One the problems could be that when there is only 50 min of lectures but the professor can't answer all of the questions in class also while go through the scheduled material on time, so the professor may need a platform to communicate and answer students questions. Another problem could be that when the professor is teaching in a large lecture hall, it may be hard to hear the students in the back of the classroom or sometimes students may be too timid to ask a question in front of all of their peers.<br></br> 
+                    To solve problems like these, we wanted to develop an interactive learning tool to bridge the gap between students and professors. Our application has chat rooms grouped by lectures or homework, and in these chat rooms students will be able to raise there hand, chat or ask questions anonymously,  and answer class polls posted by the professor. The professor will be able to create these chat rooms, usually by lecture, and see when students virtually raise their hands in class, this will be a much easier method to manage lots of questions in a classroom with 500+ students. The professor will also be able to send messages in the chat rooms and also post polls to help engage students during the lecture. Teaching assistants will also be able to utilize this application as they can help the professor by answering questions while the professor is teaching. The chat rooms will be available 24/7 to allows all users to go back to previous lectures or also send messages outside of class as well.<br></br>
+                    The way we implemented this was developing a web application with React on the frontend, Express on the backend, and MySQL to store all of the information from the api's and web socket's. Our team was split between frontend and backend, three team members each, with myself being on the backend. I mainly worked on developing the api's that were needed by the frontend team, creating the sql database with the different tables that were needed for this project and lastly helping out deployment with the use of web sockets.
+                    I learned a lot throughout this project and as it stands currently we still have another semester to finish it. For me personally, I learned about web application development as a whole, especially the backend. Specifically I learned about api's, express, and many other things as well.  Shown below is what our application looks like and a link to our current project website where our documents are included.
+                </p>
+                <a href="https://sdmay23-40.sd.ece.iastate.edu/"></a>
+                <div class="row">
+                    <div class="column">
+                        <img class="crop-image" src="images/projects-chat.png" alt="">
+                    </div>
+                    <div class="column">
+                        <img class="crop-image2" src="images/projects-lectures.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+
+</body>
+</html>
